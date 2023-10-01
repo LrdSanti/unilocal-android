@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">unilocal</string>
+    <string name="texto_busqueda">Escriba el lugar que quiere buscar...</string>
+
+    <string name="texto_irRegistro">Ir a Registro</string>
+    <string name="texto_irLogin">Ir a Login</string>
+    <string name="texto_irDetalle">Ir a Detalle</string>
+
+
+    <string name="txt_correo">Escriba su correo</string>
+    <string name="txt_contraseña">Escriba su contraseña</string>
+    <string name="txt_login">Iniciar Sesion</string>
+    <string name="txt_registro">Registrarme</string>
+    <string name="todo">TODO</string>
 </resources>
