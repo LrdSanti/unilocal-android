@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources >
     <!-- Tema de la aplicación -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Personaliza los atributos del tema si es necesario -->
+    </style>
+
+    <style name="til_form">
+        <item name="android:layout_width">320dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_height">70dp</item>
     </style>
 </resources>

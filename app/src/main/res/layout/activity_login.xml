@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".actividades.LoginActivity">
@@ -15,16 +16,38 @@
         android:layout_marginBottom="30dp"
         android:src="@mipmap/ic_launcher_round"/>
 
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:hint="@string/txt_correo"
-        android:inputType="textEmailAddress"/>
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:hint="@string/txt_contraseña"
-        android:inputType="textPassword"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_layout"
+        style="@style/til_form">
+
+        <EditText
+            android:id="@+id/email_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/fondo_forms"
+            android:hint="@string/txt_correo"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        style="@style/til_form">
+
+        <EditText
+            android:id="@+id/password_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/fondo_forms"
+            android:hint="@string/txt_contraseña"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,14 +57,16 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/btn_login"
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:text="@string/txt_login"
             android:layout_marginEnd="20dp"/>
         <Button
+            android:id="@+id/btn_registrarse"
             android:layout_width="140dp"
             android:layout_height="60dp"
-            android:text="@string/txt_correo"/>
+            android:text="@string/regisrtate"/>
 
     </LinearLayout>
 
